@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de Música</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>JARETH'S SOUND </h1>
+    <div class="cart">🛒 Carrito: <span id="cart-count">0</span></div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Bienvenido a JARETH'S SOUND</h2>
+      <p>Explora una colección exclusiva de vinilos clásicos y modernos para verdaderos melómanos. ¡Haz crecer tu colección hoy!</p>
+    </section>
+
+    <section class="pdf-link">
+      <h2>Catálogo de Vinilos</h2>
+      <p>Puedes consultar el catálogo de productos en PDF a continuación:</p>
+      <a href="catalogo.pdf" target="_blank">
+        <button class="pdf-button">📄 Ver PDF</button>
+      </a>
+    </section>
+
+    <h2>Vinilos Destacados</h2>
+    <div class="product-list">
+      <div class="product"> 
+        <img src="pink_floyd.png" alt="Dark Side of the Moon" />
+        <h3>Dark Side of the Moon</h3>
+        <p><strong>Artista:</strong> Pink Floyd</p>
+        <p>Una obra maestra psicodélica, lanzada en 1973. Inmortal en sonido y concepto.</p>
+        <p><strong>$950 MXN</strong></p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+      </div>
+
+      <div class="product">
+        <img src="the_strokes_new_abnormal.png" alt="The Strokes - The New Abnormal" />
+        <h3>The New Abnormal</h3>
+        <p><strong>Artista:</strong> The Strokes</p>
+        <p>El regreso más esperado de la banda neoyorquina, con un sonido fresco y nostálgico.</p>
+        <p><strong>$870 MXN</strong></p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+      </div>
+
+      <div class="product">
+        <img src="the_strokes_angles.png" alt="The Strokes - Angles" />
+        <h3>Angles</h3>
+        <p><strong>Artista:</strong> The Strokes</p>
+        <p>Colores, geometría y un estilo ochentero definen este disco lleno de experimentación.</p>
+        <p><strong>$780 MXN</strong></p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+      </div>
+
+      <div class="product">
+        <img src="vinilos_collage.png" alt="Collage de vinilos" />
+        <h3>Selección Vintage</h3>
+        <p><strong>Varios Artistas</strong></p>
+        <p>Incluye clásicos como Bowie, The Beach Boys, Michael Jackson, Radiohead y más.</p>
+        <p><strong>$1,200 MXN</strong></p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 JARETH'S SOUND. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
