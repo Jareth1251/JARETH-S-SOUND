@@ -25,7 +25,28 @@
         <button class="pdf-button">📄 Ver PDF</button>
       </a>
     </section>
-
+    <div style="margin-top: 30px; text-align: center;">
+      <button onclick="generateQuote()" class="pdf-button">🧾 Generar Cotización</button>
+    </div>
+    
+    <div id="quote-container" style="display: none;">
+      <h3>Cotización</h3>
+      <div id="quote-content">
+        <p><strong>Fecha:</strong> <span id="quote-date"></span></p>
+        <table id="quote-table">
+          <thead>
+            <tr>
+              <th>Vinilo</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <h4 id="total-price"></h4>
+      </div>
+      <button onclick="printQuote()" class="pdf-button">📄 Descargar PDF</button>
+    </div>
+            
     <section class="carousel-section">
       <h2>Galería de Vinilos</h2>
       <div class="carousel">
@@ -50,38 +71,37 @@
         <p><strong>Artista:</strong> Pink Floyd</p>
         <p>Una obra maestra psicodélica, lanzada en 1973. Inmortal en sonido y concepto.</p>
         <p><strong>$950 MXN</strong></p>
-        <button onclick="addToCart()">Agregar al carrito</button>
+        <button onclick="addToCart('Dark Side of the Moon', 950)">Agregar al carrito</button>
       </div>
-
+    
       <div class="product">
-        <img src="the_strokes_new_abnormal.png" alt="The Strokes - The New Abnormal" />
+        <img src="the_strokes_new_abnormal.png" alt="The New Abnormal" />
         <h3>The New Abnormal</h3>
         <p><strong>Artista:</strong> The Strokes</p>
         <p>El regreso más esperado de la banda neoyorquina, con un sonido fresco y nostálgico.</p>
         <p><strong>$870 MXN</strong></p>
-        <button onclick="addToCart()">Agregar al carrito</button>
+        <button onclick="addToCart('The New Abnormal', 870)">Agregar al carrito</button>
       </div>
-
+    
       <div class="product">
-        <img src="the_strokes_angles.png" alt="The Strokes - Angles" />
+        <img src="the_strokes_angles.png" alt="Angles" />
         <h3>Angles</h3>
         <p><strong>Artista:</strong> The Strokes</p>
         <p>Colores, geometría y un estilo ochentero definen este disco lleno de experimentación.</p>
         <p><strong>$780 MXN</strong></p>
-        <button onclick="addToCart()">Agregar al carrito</button>
+        <button onclick="addToCart('Angles', 780)">Agregar al carrito</button>
       </div>
-
+    
       <div class="product">
-        <img src="vinilos_collage.png" alt="Collage de vinilos" />
+        <img src="vinilos_collage.png" alt="Selección Vintage" />
         <h3>Selección Vintage</h3>
         <p><strong>Varios Artistas</strong></p>
         <p>Incluye clásicos como Bowie, The Beach Boys, Michael Jackson, Radiohead y más.</p>
-        <p><strong>$1,200 MXN</strong></p>
-        <button onclick="addToCart()">Agregar al carrito</button>
+        <p><strong>$1200 MXN</strong></p>
+        <button onclick="addToCart('Selección Vintage', 1200)">Agregar al carrito</button>
       </div>
     </div>
-  </main>
-
+  </main>    
   <footer>
     <p>© 2025 JARETH'S SOUND. Todos los derechos reservados.</p>
   </footer>
