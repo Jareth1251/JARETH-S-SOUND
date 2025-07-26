@@ -62,7 +62,6 @@
       </div>
     </section>
     
-
     <h2>Vinilos Destacados</h2>
     <div class="product-list">
       <div class="product"> 
@@ -102,9 +101,25 @@
       </div>
     </div>
   </main>    
+
   <footer>
     <p>© 2025 JARETH'S SOUND. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- CHATBOX INICIO -->
+  <div id="chat-button" onclick="toggleChat()">💬</div>
+  <div id="chat-container" class="hidden">
+    <div id="chat-header">
+      Asistente de Jareth
+      <span onclick="toggleChat()">✖</span>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="chat-input">
+      <input type="text" id="chat-text" placeholder="Escribe tu mensaje..." onkeydown="handleChatKey(event)" />
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+  <!-- CHATBOX FIN -->
 
   <script src="script.js"></script>
 </body>
